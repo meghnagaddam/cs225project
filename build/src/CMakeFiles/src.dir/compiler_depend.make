@@ -3,5 +3,9 @@
 
 src/CMakeFiles/src.dir/dfs.cpp.o: ../src/dfs.cpp
 
+src/CMakeFiles/src.dir/graph.cpp.o: ../src/graph.cpp
+
+
+../src/graph.cpp:
 
 ../src/dfs.cpp:
