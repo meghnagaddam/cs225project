@@ -1,30 +1,9 @@
 #include <iostream>
 #include <map>
 #include <list>
+#include "graph.h"
 
-class Graph{
-    public:
-        std::map<int,bool> visited;
-        std::map<int,std::list<int> > adj;
-        void addEdge(int v, int w); // function to add an edge to graph
-        void DFS(int v);
-}; 
-
-void Graph::addEdge(int v, int w)
-{
-    adj[v].push_back(w); // Add w to v’s list.
-}
  
-
-void Graph::DFS(int v)
-{
-    visited[v] = true;
-    std::cout << v << " ";
-    std::list<int>::iterator i;
-    for (i = adj[v].begin(); i != adj[v].end(); ++i)
-        if (!visited[*i])
-            DFS(*i);
-}
 
 int main(){
     Graph g;

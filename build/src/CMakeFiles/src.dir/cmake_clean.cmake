@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/src.dir/dfs.cpp.o"
   "CMakeFiles/src.dir/dfs.cpp.o.d"
+  "CMakeFiles/src.dir/graph.cpp.o"
+  "CMakeFiles/src.dir/graph.cpp.o.d"
   "libsrc.a"
   "libsrc.pdb"
 )

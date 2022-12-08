@@ -155,6 +155,30 @@ dfs.cpp.s:
 	cd /workspaces/CS225/Project1/FinalProject/cs225project/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/dfs.cpp.s
 .PHONY : dfs.cpp.s
 
+graph.o: graph.cpp.o
+.PHONY : graph.o
+
+# target to build an object file
+graph.cpp.o:
+	cd /workspaces/CS225/Project1/FinalProject/cs225project/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/graph.cpp.o
+.PHONY : graph.cpp.o
+
+graph.i: graph.cpp.i
+.PHONY : graph.i
+
+# target to preprocess a source file
+graph.cpp.i:
+	cd /workspaces/CS225/Project1/FinalProject/cs225project/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/graph.cpp.i
+.PHONY : graph.cpp.i
+
+graph.s: graph.cpp.s
+.PHONY : graph.s
+
+# target to generate assembly for a file
+graph.cpp.s:
+	cd /workspaces/CS225/Project1/FinalProject/cs225project/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/graph.cpp.s
+.PHONY : graph.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -167,6 +191,9 @@ help:
 	@echo "... dfs.o"
 	@echo "... dfs.i"
 	@echo "... dfs.s"
+	@echo "... graph.o"
+	@echo "... graph.i"
+	@echo "... graph.s"
 .PHONY : help
 
 
